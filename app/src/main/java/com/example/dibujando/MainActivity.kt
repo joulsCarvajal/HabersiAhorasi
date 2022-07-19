@@ -34,25 +34,25 @@ class MainActivity : AppCompatActivity() {
         val whiteBtn = findViewById<ImageButton>(R.id.whiteColor)
 
         redBtn.setOnClickListener {
-            Toast.makeText(this,"Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Rojo", Toast.LENGTH_SHORT).show()
             paintBrush.color = Color.RED
             currentColor(paintBrush.color)
         }
 
         blueBtn.setOnClickListener {
-            Toast.makeText(this,"Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Azul", Toast.LENGTH_SHORT).show()
             paintBrush.color = Color.BLUE
             currentColor(paintBrush.color)
         }
 
         blackBtn.setOnClickListener {
-            Toast.makeText(this,"Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Black", Toast.LENGTH_SHORT).show()
             paintBrush.color = Color.BLACK
             currentColor(paintBrush.color)
         }
 
         whiteBtn.setOnClickListener {
-            Toast.makeText(this,"Clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Borrar", Toast.LENGTH_SHORT).show()
             pathList.clear()
             colorList.clear()
             path.reset()
