@@ -2,17 +2,13 @@
 package com.example.dibujando
 
 import android.content.Context
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
-import android.graphics.Path
+import android.graphics.*
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import com.example.dibujando.MainActivity.Companion.paintBrush
 import com.example.dibujando.MainActivity.Companion.path
-
 
 
 //Ponemos el view, sin embargo el constructor no viene en las ayudas de a.s., entonces toca ir
@@ -73,11 +69,14 @@ class PaintView: View {
     }
 
     override fun onDraw(canvas: Canvas) {
+        //var ancho = canvas.width
+        //var altito = canvas.height
+
         for(i in pathList.indices){
             paintBrush.setColor(colorList[i])
             canvas.drawPath(pathList[i], paintBrush)
+
             invalidate()
         }
     }
-
 }
