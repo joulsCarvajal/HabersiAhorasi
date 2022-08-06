@@ -72,17 +72,10 @@ class PaintView: View {
     override fun onDraw(canvas: Canvas) {
         val textA = findViewById<TextView>(R.id.textAltura)
         val textAn = findViewById<TextView>(R.id.textAncho)
-        //var ancho = canvas.width
-        //var altito = canvas.height
-
-        //textA.height
-        //textAn.width
 
         for(i in pathList.indices){
             paintBrush.setColor(colorList[i])
             canvas.drawPath(pathList[i], paintBrush)
-            textA.height = canvas.height
-            textAn.width = canvas.width
 
             invalidate()
         }
