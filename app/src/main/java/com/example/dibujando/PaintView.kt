@@ -7,6 +7,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.dibujando.MainActivity.Companion.paintBrush
 import com.example.dibujando.MainActivity.Companion.path
 
@@ -69,12 +70,19 @@ class PaintView: View {
     }
 
     override fun onDraw(canvas: Canvas) {
+        val textA = findViewById<TextView>(R.id.textAltura)
+        val textAn = findViewById<TextView>(R.id.textAncho)
         //var ancho = canvas.width
         //var altito = canvas.height
+
+        //textA.height
+        //textAn.width
 
         for(i in pathList.indices){
             paintBrush.setColor(colorList[i])
             canvas.drawPath(pathList[i], paintBrush)
+            textA.height = canvas.height
+            textAn.width = canvas.width
 
             invalidate()
         }

@@ -50,7 +50,24 @@
 
         //Creamos el paint_view en la carpeta res - Layout - New Layout resourse file
         //Según lo que entiendo, no se puede dibujar sobre el layout principal, entonces ajá
-        <include layout="@layout/paint_view"/>
+
+        <include layout="@layout/paint_view" />
+
+        <TextView
+            android:id="@+id/textAltura"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:text="Ancho"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textAncho"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Alto"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 
