@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val blueBtn = findViewById<ImageButton>(R.id.blueColor)
         val blackBtn = findViewById<ImageButton>(R.id.blackColor)
         val whiteBtn = findViewById<ImageButton>(R.id.whiteColor)
+        val sizeBtn = findViewById<ImageButton>(R.id.sizeLine)
 
         redBtn.setOnClickListener {
             Toast.makeText(this,"Rojo", Toast.LENGTH_SHORT).show()
@@ -46,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         blackBtn.setOnClickListener {
-            Toast.makeText(this,"Black", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Negro", Toast.LENGTH_SHORT).show()
             paintBrush.color = Color.BLACK
             currentColor(paintBrush.color)
         }
@@ -56,6 +57,12 @@ class MainActivity : AppCompatActivity() {
             pathList.clear()
             colorList.clear()
             path.reset()
+        }
+
+        sizeBtn.setOnClickListener {
+            Toast.makeText(this, "NO MAMEES", Toast.LENGTH_LONG).show()
+            paintBrush.color = Color.GRAY
+            currentColor(paintBrush.color)
         }
     }
 

@@ -40,6 +40,12 @@
             android:layout_height="50dp"
             android:background="@drawable/white_background"/>
 
+        <ImageButton
+            android:id="@+id/sizeLine"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sizeline_background"/>
+
     </LinearLayout>
 
 <!--permite esperar el dibujo de nuestro canvas-->

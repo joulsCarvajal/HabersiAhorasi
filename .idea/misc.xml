@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.20208333333333334" />
         <entry key="app/src/main/res/drawable/black_background.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/blue_background.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/red_background.xml" value="0.14112225341796875" />
+        <entry key="app/src/main/res/drawable/sizeline_background.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/toolbar_background.xml" value="0.183" />
         <entry key="app/src/main/res/drawable/white_background.xml" value="0.183" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33527069091796874" />
